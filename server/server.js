@@ -19,7 +19,7 @@ app.use('/employee',employeeRouter);
 app.use('/department',departmentRouter);
 
 
-app.listen(process.env.PORT || 8380, async () => { 
+app.listen( 8380, async () => { 
     await connectWithDB();
     console.log(`express server is running at http://localhost:8380`);
 
